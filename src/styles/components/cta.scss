@@ -5,6 +5,12 @@
   align-items: center;
   justify-content: space-between;
 
+  &--title {
+    @media (min-width: $tablet-breakpoint) {
+      margin-bottom: 0;
+    }
+  }
+
   & > * {
     flex: 1 1 0px;
   }

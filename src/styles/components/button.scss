@@ -10,7 +10,12 @@ a {
     padding: 0;
   }
   & > :not(:last-child) .button {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
+
+    @media (max-width: $extra-small-breakpoint) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
@@ -23,7 +28,6 @@ a {
   transition: 0.3s;
   cursor: pointer;
   display: inline-flex;
-  margin-bottom: 0.5rem;
 
   p {
     color: $primary-color;

@@ -6,7 +6,7 @@ const CTA = () => {
   return (
     <div className="container container--font-color">
       <div className="content-container cta">
-        <h1>Contact me</h1>
+        <h1 className="cta--title">Contact me</h1>
         <p className="p-medium">
           If you are interested in working with me, feel free to send me an
           email.

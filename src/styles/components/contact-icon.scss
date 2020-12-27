@@ -1,12 +1,16 @@
 @import "../base/settings";
 
-.social-container {
+.contact-container {
   margin-left: auto;
   margin-right: auto;
   display: inline-flex;
+
+  & > :not(:last-child) .contact-icon {
+    margin-right: 2.5rem;
+  }
 }
 
-.social-icon {
+.contact-icon {
   border: 1px solid lighten($primary-color, 20%);
   border-radius: 100%;
   width: 5rem;
@@ -14,11 +18,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 
-  img {
-    width: 16px;
+  img,
+  svg {
+    width: 20px;
+    fill: white;
   }
 
   &:hover {
+    background-color: white;
+
+    & > * {
+      fill: $primary-color;
+    }
   }
 }

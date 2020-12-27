@@ -1,19 +1,19 @@
 import React from "react";
 import "../styles/components/footer.scss";
-import SocialIcon from "./SocialIcon";
-import SOCIAL_MEDIA from "../constants/social";
+import ContactIcon from "./ContactIcon";
+import CONTACT_INFO from "../constants/contact";
 
 const Footer = () => {
   const getYear = () => new Date().getFullYear();
-  const drawSocial = () => {
-    return SOCIAL_MEDIA.map((social) => <SocialIcon social={social} />);
+  const drawContact = () => {
+    return CONTACT_INFO.map((item) => <ContactIcon contact={item} />);
   };
   return (
     <footer>
       <div className="container container--primary-color">
         <div className="content-container footer">
-          <div className="social-container">{drawSocial()}</div>
-          <div className="footer__copy" style={{ marginTop: "2rem" }}>
+          <div className="contact-container">{drawContact()}</div>
+          <div className="footer__copy" style={{ marginTop: "4rem" }}>
             &copy; {getYear()} Cees Jol
           </div>
         </div>
