@@ -33,6 +33,7 @@ body {
     // margin: 0;
     // padding: 0;
     // line-height: 1;
+    margin-top: 0;
     color: $font-color;
   }
 
@@ -44,7 +45,6 @@ body {
 
   h1 {
     font-size: 3rem;
-    margin-top: 0;
   }
 
   h2 {
@@ -60,10 +60,6 @@ body {
   h2,
   p {
     margin-bottom: 0;
-  }
-
-  p {
-    margin-top: 0;
   }
 }
 

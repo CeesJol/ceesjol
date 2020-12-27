@@ -1,0 +1,41 @@
+@import "../base/settings";
+
+.skills {
+  background-color: white;
+  border-radius: 23px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 4rem;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+  }
+
+  h2,
+  li,
+  p {
+    color: $font-color;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  &__column {
+    padding: 4rem 2rem;
+    width: 100%;
+    background-color: white;
+    &:not(:last-child) {
+      border-right: 1px solid lightgrey;
+
+      @media (max-width: $tablet-breakpoint) {
+        border-right: none;
+        border-bottom: 1px solid lightgrey;
+      }
+    }
+  }
+}

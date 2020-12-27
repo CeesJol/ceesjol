@@ -1,11 +1,12 @@
 import React from "react";
 import "../../styles/components/intro.scss";
+import Skills from "./Skills";
 
 const Intro = () => {
   return (
     <section>
       <div className="container container--primary-color intro">
-        <div className="content-container intro">
+        <div className="content-container">
           <h1>Hi, I'm Cees</h1>
           <div className="content-container--small">
             <p className="p-large">
@@ -14,6 +15,7 @@ const Intro = () => {
               Webdevelopment and UI/UX.
             </p>
           </div>
+          <Skills />
         </div>
       </div>
     </section>
