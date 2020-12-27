@@ -10,13 +10,15 @@ const Button = ({ fn, href, text, color }) => {
     return className;
   };
   const getButton = () => (
-    <div onClick={fn} className={getClassName()}>
+    // Disable eslint here, since the a-tag already gives tab support
+    // eslint-disable-next-line jsx-a11y/interactive-supports-focus
+    <div onClick={fn} onKeyDown={fn} className={getClassName()} role="button">
       <p>{text}</p>
     </div>
   );
   if (fn) return getButton();
   return (
-    <a href={href} target="_blank" referrer="noreferrer">
+    <a href={href} target="_blank" rel="noreferrer">
       {getButton()}
     </a>
   );

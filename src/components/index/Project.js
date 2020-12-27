@@ -53,7 +53,7 @@ const Project = ({ project }) => {
         </div>
         <div className="project__body">
           <div className="project__left">
-            <a href={project.link} target="_blank" referrer="noreferrer">
+            <a href={project.link} target="_blank" rel="noreferrer">
               <img
                 className="project--image"
                 src={`projects/${project.img}`}

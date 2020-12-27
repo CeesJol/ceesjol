@@ -11,7 +11,7 @@ const ContactIcon = ({ contact }) => {
     );
   }
   return (
-    <a href={link} target="_blank" referrer="noreferrer">
+    <a href={link} target="_blank" rel="noreferrer">
       <div className="contact-icon">
         {/* <img src={`contact/${icon}.svg`} alt={`Link to my ${icon}`} /> */}
         {icon()}
