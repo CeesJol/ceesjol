@@ -1,6 +1,6 @@
 # Hi there! <img src="https://raw.githubusercontent.com/CeesJol/CeesJol/master/static/wave.gif" width="30px">
 
-My name is Cees Jol and I am Computer Science and Engineering student at Delft UT. I am experienced in web development and UI/UX. You can find me on [![LinkedIn profile][3.2]][3].
+My name is Cees Jol and I am Computer Science and Engineering student at Delft UT. I am experienced in web development and UI/UX. You can find me on [![LinkedIn][3.2]][3].
 
 ## 👨‍💻 Portfolio
 
@@ -19,7 +19,7 @@ Feel free to send me an email.
 
 <!-- icons -->
 
-[3.2]: https://raw.githubusercontent.com/CeesJol/CeesJol/master/linkedin-3-16.png "LinkedIn icon without padding"
+[3.2]: https://raw.githubusercontent.com/CeesJol/CeesJol/master/static/linkedin-3-16.png "LinkedIn icon without padding"
 
 <!-- links to social media accounts -->
 
