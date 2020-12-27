@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/button.scss";
+import "../../styles/components/button.scss";
 
 const Button = ({ fn, href, text, color }) => {
   const getClassName = () => {

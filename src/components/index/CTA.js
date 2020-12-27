@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import "../styles/components/cta.scss";
+import Button from "../general/Button";
+import "../../styles/components/cta.scss";
 
 const CTA = () => {
   return (

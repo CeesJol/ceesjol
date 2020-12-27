@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/contact-icon.scss";
+import "../../styles/components/contact-icon.scss";
 
 const ContactIcon = ({ contact }) => {
   const { link, icon, download } = contact;

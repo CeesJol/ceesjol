@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import "../styles/components/project.scss";
+import Button from "../general/Button";
+import "../../styles/components/project.scss";
 
 const Project = ({ project }) => {
   const drawDesc = (desc) => {

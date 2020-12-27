@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/components/footer.scss";
+import "../../styles/components/footer.scss";
 import ContactIcon from "./ContactIcon";
-import CONTACT_INFO from "../constants/contact";
+import CONTACT_INFO from "../../constants/contact";
 
 const Footer = () => {
   const getYear = () => new Date().getFullYear();

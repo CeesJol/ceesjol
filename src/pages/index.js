@@ -1,13 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Header from "../components/Header";
-import Splash from "../components/Splash";
-import Intro from "../components/Intro";
-import Skills from "../components/Skills";
-import Portfolio from "../components/Portfolio";
-import Testimonials from "../components/Testimonials";
-import CTA from "../components/CTA";
-import Footer from "../components/Footer";
+import Header from "../components/index/Header";
+import Splash from "../components/index/Splash";
+import Intro from "../components/index/Intro";
+import Skills from "../components/index/Skills";
+import Portfolio from "../components/index/Portfolio";
+import Testimonials from "../components/index/Testimonials";
+import CTA from "../components/index/CTA";
+import Footer from "../components/index/Footer";
 import "../styles/index.scss";
 
 const index = ({ data }) => {

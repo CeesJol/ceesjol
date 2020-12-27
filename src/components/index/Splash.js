@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/splash.scss";
+import "../../styles/components/splash.scss";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 

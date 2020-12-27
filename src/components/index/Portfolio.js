@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "./Project";
-import MY_PROJECTS from "../constants/projects";
-import "../styles/components/portfolio.scss";
+import MY_PROJECTS from "../../constants/projects";
+import "../../styles/components/portfolio.scss";
 
 const Portfolio = () => {
   return (

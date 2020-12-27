@@ -1,48 +1,30 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Hi there! <img src="https://raw.githubusercontent.com/CeesJol/CeesJol/master/static/wave.gif" width="30px">
 
-## 🚀 Quick start
+My name is Cees Jol and I am Computer Science and Engineering student at Delft UT. I am experienced in web development and UI/UX. You can find me on [![LinkedIn profile][3.2]][3].
 
-1.  **Create a Gatsby site.**
+## 👨‍💻 Portfolio
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Interested in which projects I am working on and have worked on? Check out [my portfolio][1].
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## 📈 GitHub Stats
 
-2.  **Start developing.**
+<a href="https://github.com/CeesJol/CeesJol">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=CeesJol&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Cees's GitHub Stats" />
+</a>
 
-    Navigate into your new site’s directory and start it up.
+## ✏️ Contact me
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+Feel free to send me an email.  
+📧 [info@ceesjol.nl](mailto:info@ceesjol.nl)
 
-3.  **Open the code and start customizing!**
+<!-- icons -->
 
-    Your site is now running at http://localhost:8000!
+[3.2]: https://raw.githubusercontent.com/CeesJol/CeesJol/master/linkedin-3-16.png "LinkedIn icon without padding"
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+<!-- links to social media accounts -->
 
-4.  **Learn more**
+[1]: https://ceesjol.nl/
+[2]: https://github.com/CeesJol/
+[3]: https://www.linkedin.com/in/ceesjol/
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+<!-- README inspired by https://github.com/MartinHeinz/MartinHeinz -->

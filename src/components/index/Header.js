@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/components/header.scss";
+import "../../styles/components/header.scss";
 import Hamburger from "hamburger-react";
 import Nav from "./Nav";
 
