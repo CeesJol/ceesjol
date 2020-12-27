@@ -1,0 +1,9 @@
+@import "../base/settings.scss";
+
+.splash {
+  &--image {
+    margin-top: 5rem;
+    border-radius: 100%;
+    border: 2px solid $primary-color;
+  }
+}

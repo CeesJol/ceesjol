@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import "./base/settings";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+button {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+body {
+  font-size: 1.6rem;
+  color: black;
+  // line-height: 1.6;
+  margin: 0;
+  // background-color: rgb(246, 248, 250);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    font-weight: 300;
+    // margin: 0;
+    // padding: 0;
+    // line-height: 1;
+    color: $font-color;
+  }
+
+  h1,
+  h2 {
+    font-weight: 600;
+    // line-height: 2;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h2,
+  p {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.content-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 130rem;
+  @media (max-width: $desktop-breakpoint) {
+    max-width: calc(#{$desktop-breakpoint} * 1.25);
+  }
+  @media (max-width: $tablet-breakpoint) {
+    max-width: calc(#{$tablet-breakpoint} * 1.25);
+  }
+  text-align: center;
+  padding: 5rem $margin-side-large;
+  @media (max-width: $tablet-breakpoint) {
+    padding: 5rem $margin-side-medium;
+  }
+  @media (max-width: $mobile-breakpoint) {
+    padding: 5rem $margin-side-small;
+  }
+
+  &--small {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container {
+  &--primary-color {
+    background-color: $primary-color;
+
+    * {
+      color: white !important;
+    }
+  }
+
+  &--font-color {
+    background-color: $font-color;
+
+    * {
+      color: white !important;
+    }
+  }
+}
+
+.p-large {
+  font-size: 2rem;
+}
+
+.p-medium {
+  font-size: 1.8rem;
+}

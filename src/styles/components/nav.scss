@@ -1,0 +1,34 @@
+@import "../base/settings";
+
+.nav {
+  & > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+  @media (max-width: $mobile-breakpoint) {
+    & > *:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+  &__item {
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 1rem;
+    }
+
+    a,
+    a:visited {
+      color: $font-color;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: $primary-color;
+      // text-decoration: underline;
+    }
+
+    a:active {
+      // color: darken(blue, 30%);
+      text-decoration: underline;
+    }
+  }
+}

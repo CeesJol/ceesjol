@@ -1,0 +1,43 @@
+@import "../base/settings";
+
+.header {
+  text-align: left !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5rem !important;
+  padding-bottom: 0 !important;
+
+  &__left {
+    color: $primary-color;
+    font-weight: 600;
+  }
+
+  &__mobile-nav {
+    text-align: center;
+    margin-top: 2rem;
+    display: none;
+  }
+
+  .hamburger-react {
+    display: none;
+  }
+
+  &__right--nav .nav {
+    display: flex;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    &__right--nav {
+      display: none;
+    }
+
+    .hamburger-react {
+      display: block;
+    }
+
+    &__mobile-nav {
+      display: block;
+    }
+  }
+}
