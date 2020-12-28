@@ -11,11 +11,11 @@ const Splash = ({ data }) => {
           <h2 className="p-large" style={{ marginTop: "2rem" }}>
             Web Developer
           </h2>
-          <Img
+          {/* <Img
             className="splash--image"
             fixed={data.file.childImageSharp.fixed}
             alt="Cees Jol"
-          />
+          /> */}
         </div>
       </div>
     </section>
