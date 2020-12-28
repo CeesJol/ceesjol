@@ -1,20 +1,22 @@
 import React from "react";
 import "../../styles/components/splash.scss";
 import Img from "gatsby-image";
+import { useTranslation } from "react-i18next";
 
 const Splash = ({ data }) => {
+  const { t } = useTranslation();
   return (
     <section>
       <div className="container splash">
         <div className="content-container">
-          <h1>Computer Science and Engineering Student</h1>
+          <h1>{t("splash.title")}</h1>
           <h2 className="p-large" style={{ marginTop: "2rem" }}>
-            Web Developer
+            {t("splash.subtitle")}
           </h2>
           <Img
             className="splash--image"
             fixed={data.file.childImageSharp.fixed}
-            alt="Cees Jol"
+            alt={t("site.name")}
           />
         </div>
       </div>

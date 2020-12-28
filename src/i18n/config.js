@@ -1,13 +1,14 @@
 import i18next from "i18next";
+import detectLanguage from "../constants/language";
 
 i18next.init({
-  fallbackLng: "en",
+  fallbackLng: detectLanguage(),
   resources: {
-    "zh-Hant": {
-      translations: require("../locales/tw/translations.json"),
-    },
     en: {
-      translations: require("../locales/en/translations.json"),
+      translations: require("../locales/en/en.json"),
+    },
+    nl: {
+      translations: require("../locales/nl/nl.json"),
     },
   },
   ns: ["translations"],
@@ -22,6 +23,6 @@ i18next.init({
   },
 });
 
-i18next.languages = ["zh-Hant", "en"];
+i18next.languages = ["en", "nl"];
 
 export default i18next;

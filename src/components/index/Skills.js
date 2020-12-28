@@ -6,16 +6,16 @@ const Skills = () => {
   return (
     <div className="skills">
       {SKILL_SECTIONS.map((skill) => (
-        <div className="skills__column">
+        <div className="skills__column" key={`skills__column-${skill.title}`}>
           <h2>{skill.title}</h2>
           <p>{skill.description}</p>
           {skill.sections.map((section) => (
-            <>
+            <div key={`section-${section.title}`}>
               <h3>{section.title}</h3>
               {section.content.map((item) => (
-                <p>{item}</p>
+                <p key={`sectionItem-${item}`}>{item}</p>
               ))}
-            </>
+            </div>
           ))}
         </div>
       ))}

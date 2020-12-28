@@ -9,12 +9,12 @@ const Portfolio = () => {
       <div className="container portfolio">
         <div className="content-container" style={{ paddingBottom: "0" }}>
           <h1>My recent work</h1>
-          <p class="p-medium">
+          <p className="p-medium">
             Here is an overview of my most recent work in web development.
           </p>
         </div>
         {MY_PROJECTS.map((project) => (
-          <Project project={project} />
+          <Project project={project} key={`project-${project.name}`} />
         ))}
       </div>
     </section>
