@@ -19,5 +19,67 @@
 		"title": "Contact opnemen",
 		"subtitle": "Als u interesse heeft om met mij te werken, stuur me dan gerust een e-mail.",
 		"email": "Stuur een e-mail"
+	},
+	"contact": {
+		"resume": "CV"
+	},
+	"skills": {
+		"agileWith": "Behendig met",
+		"familiarWith": "Bekend met",
+		"skills": [
+			{
+				"title": "Web Development",
+				"description": "Ik heb deze vaardigheden opgedaan door mijn eigen projecten en online courses/tutorials."
+			},
+			{
+				"title": "Overige",
+				"description": "Deze vaardigheden heb ik geleerd bij mijn studie of mijn eigen projecten."
+			}
+		]
+	},
+	"projects": {
+		"buttons": {
+			"visitSite": "Bekijk site",
+			"viewCode": "Bekijk code"
+		},
+		"problemDefinition": "Probleemstelling",
+		"solution": "Oplossing",
+		"projects": [
+			{
+				"name": "Resume Builder",
+				"description": [
+					"Een CV maken is een lastig proces. Het maken van een geschikt sjabloon en het geven van relevante details is vaak lastig.",
+					"Een online cv-bouwer zou mensen kunnen helpen met een kant-en-klaar sjabloon en tips op basis van hun huidige cv."
+				],
+				"features": [
+					"Account aanmaken, authentication, e-mailbevestiging",
+					"Gebruiksvriendelijke interface voor het maken van een cv",
+					"Kant-en-klare sjabloons",
+					"Tips op basis van de huidige cv (in ontwikkeling)",
+					"Exporteren naar PDF",
+					"Responsive website en dashboard"
+				],
+				"technologies": [
+					"Front-end: React, Next.js, Sass",
+					"Back-end: serverless API routes",
+					"Database: FaunaDB, GraphQL",
+					"Authentication: JWT access tokens opgeslagen in cookies"
+				]
+			},
+			{
+				"name": "Proteus Introductie Site",
+				"description": [
+					"Mijn roeivereniging, Proteus-Eretes, heeft een introductiesite voor potentiële nieuwe leden. Deze moest worden bijgewerkt om informatiever te zijn.",
+					"In een commissie met andere programmeurs en ontwerpers een responsive website met veel inhoud gemaakt."
+				],
+				"technologies": ["Vue", "Nuxt.js", "Vuetify"]
+			}
+		]
+	},
+	"footer": {
+		"subtitle": [
+			"Gemaakt met ❤️ met ",
+			"Bekijk op "
+		]
 	}
 }

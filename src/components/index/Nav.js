@@ -7,10 +7,10 @@ import LanguageMenu from "../general/LanguageMenu";
 const Nav = () => {
   return (
     <div className="nav">
-      <LanguageMenu />
       {CONTACT_INFO.map((item) => (
         <NavItem contact={item} key={`CONTACT_INFO-${item.name}`} />
       ))}
+      <LanguageMenu />
     </div>
   );
 };

@@ -27,7 +27,8 @@
     display: flex;
   }
 
-  @media (max-width: $mobile-breakpoint) {
+  // Show hamburger menu
+  @media (max-width: $tablet-breakpoint) {
     &__right--nav {
       display: none;
     }

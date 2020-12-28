@@ -1,41 +1,23 @@
 import React, { useState } from "react";
-import Select from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
 import { useTranslation } from "react-i18next";
 import detectLanguage from "../../constants/language";
+import "../../styles/general/language-menu.scss";
 
 const LanguageMenu = () => {
   const { i18n } = useTranslation();
-
-  const [values, setValues] = useState({
-    language: detectLanguage(),
-  });
+  const [language, setLanguage] = useState(detectLanguage());
 
   function handleChange(event) {
     i18n.changeLanguage(event.target.value);
-
-    setValues((oldValues) => ({
-      ...oldValues,
-      [event.target.name]: event.target.value,
-    }));
+    setLanguage(event.target.value);
+    console.log("event.target.value:", event.target.value);
   }
 
   return (
-    <Select
-      value={values.language}
-      onChange={(e) => handleChange(e)}
-      disableUnderline
-      inputProps={{
-        name: "language",
-      }}
-    >
-      <MenuItem value={"en"}>
-        <p>EN</p>
-      </MenuItem>
-      <MenuItem value={"nl"}>
-        <p>NL</p>
-      </MenuItem>
-    </Select>
+    <select value={language} onChange={(e) => handleChange(e)}>
+      <option value="en">🇺🇸 English</option>
+      <option value="nl">🇳🇱 Nederlands</option>
+    </select>
   );
 };
 

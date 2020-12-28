@@ -8,8 +8,8 @@ const Project = ({ project }) => {
   const drawDesc = (desc) => {
     return (
       <div key={`desc-${project.name}-${desc.title}`}>
-        <h2>{desc.title}</h2>
-        <p>{desc.description}</p>
+        <h2>{t(desc.title)}</h2>
+        <p>{t(desc.description)}</p>
       </div>
     );
   };
@@ -18,7 +18,7 @@ const Project = ({ project }) => {
     return (
       <>
         <h2>{t("project.features")}</h2>
-        <ul>{project.features.map((feature) => drawFeature(feature))}</ul>
+        <ul>{t(project.features).map((feature) => drawFeature(feature))}</ul>
       </>
     );
   };
@@ -29,8 +29,8 @@ const Project = ({ project }) => {
     if (!project.technologies) return;
     return (
       <>
-        <h2>{t("splash.technologies")}</h2>
-        <ul>{project.technologies.map((tech) => drawTech(tech))}</ul>
+        <h2>{t("project.technologies")}</h2>
+        <ul>{t(project.technologies).map((tech) => drawTech(tech))}</ul>
       </>
     );
   };
@@ -41,7 +41,7 @@ const Project = ({ project }) => {
     <div className="project">
       <div className="content-container">
         <div className="project__header">
-          <h1>{project.name}</h1>
+          <h1>{t(project.name)}</h1>
           <div className="buttons-container">
             <Button
               href={project.link}

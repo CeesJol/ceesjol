@@ -18,7 +18,27 @@ const Footer = () => {
         <div className="content-container footer">
           <div className="contact-container">{drawContact()}</div>
           <div className="footer__copy" style={{ marginTop: "4rem" }}>
-            &copy; {getYear()} Cees Jol
+            <p>&copy; {getYear()} Cees Jol</p>
+            <br />
+            <p>
+              {t("footer.subtitle.0")}{" "}
+              <a
+                href="https://www.gatsbyjs.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Gatsby
+              </a>
+              . {t("footer.subtitle.1")}{" "}
+              <a
+                href="https://github.com/CeesJol/CeesJol"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              .
+            </p>
           </div>
         </div>
       </div>

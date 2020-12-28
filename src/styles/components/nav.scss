@@ -1,16 +1,20 @@
 @import "../base/settings";
 
 .nav {
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+    align-items: center;
+  }
   & > *:not(:last-child) {
     margin-right: 2rem;
   }
-  @media (max-width: $mobile-breakpoint) {
+  @media (max-width: $tablet-breakpoint) {
     & > *:not(:last-child) {
       margin-right: 0;
     }
   }
   &__item {
-    @media (max-width: $mobile-breakpoint) {
+    @media (max-width: $tablet-breakpoint) {
       margin-bottom: 1rem;
     }
 
