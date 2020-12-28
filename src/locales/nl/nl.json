@@ -1,9 +1,23 @@
 {
-	"site": {
-		"name": "Cees Jol"
-	},
 	"splash": {
 		"title": "Student Technische Informatica",
 		"subtitle": "Web Developer"
+	},
+	"intro": {
+		"title": "Hallo, ik ben Cees",
+		"subtitle": "Ik ben een student Technische Informatica aan de TU Delft met passie voor leren en lesgeven. Ik ben Ervaren in Webdevelopment en UI/UX."
+	},
+	"portfolio": {
+		"title": "Mijn recente projecten",
+		"subtitle": "Hier is een overview van mijn meeste recente projecten in web development."
+	},
+	"project": {
+		"features": "Belangrijke Kenmerken",
+		"technologies": "Technologieën Gebruikt"
+	},
+	"cta": {
+		"title": "Contact opnemen",
+		"subtitle": "Als u interesse heeft om met mij te werken, stuur me dan gerust een e-mail.",
+		"email": "Stuur een e-mail"
 	}
 }

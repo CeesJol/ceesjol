@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "../general/Button";
 import "../../styles/components/project.scss";
+import { useTranslation } from "react-i18next";
 
 const Project = ({ project }) => {
+  const { t } = useTranslation();
   const drawDesc = (desc) => {
     return (
       <div key={`desc-${project.name}-${desc.title}`}>
@@ -15,7 +17,7 @@ const Project = ({ project }) => {
     if (!project.features) return;
     return (
       <>
-        <h2>Notable Features</h2>
+        <h2>{t("project.features")}</h2>
         <ul>{project.features.map((feature) => drawFeature(feature))}</ul>
       </>
     );
@@ -27,7 +29,7 @@ const Project = ({ project }) => {
     if (!project.technologies) return;
     return (
       <>
-        <h2>Technologies Used</h2>
+        <h2>{t("splash.technologies")}</h2>
         <ul>{project.technologies.map((tech) => drawTech(tech))}</ul>
       </>
     );

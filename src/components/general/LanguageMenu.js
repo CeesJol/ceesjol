@@ -30,10 +30,10 @@ const LanguageMenu = () => {
       }}
     >
       <MenuItem value={"en"}>
-        <p>Hey its EN</p>
+        <p>EN</p>
       </MenuItem>
       <MenuItem value={"nl"}>
-        <p>Hey its nl</p>
+        <p>NL</p>
       </MenuItem>
     </Select>
   );

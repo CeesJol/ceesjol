@@ -2,8 +2,10 @@ import React from "react";
 import "../../styles/components/footer.scss";
 import ContactIcon from "./ContactIcon";
 import CONTACT_INFO from "../../constants/contact";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const getYear = () => new Date().getFullYear();
   const drawContact = () => {
     return CONTACT_INFO.map((item) => (
