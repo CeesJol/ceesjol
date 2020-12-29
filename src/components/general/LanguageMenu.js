@@ -15,8 +15,8 @@ const LanguageMenu = () => {
 
   return (
     <select value={language} onChange={(e) => handleChange(e)}>
-      <option value="en">🇺🇸 English</option>
-      <option value="nl">🇳🇱 Nederlands</option>
+      <option value="en">🇺🇸</option>
+      <option value="nl">🇳🇱</option>
     </select>
   );
 };
