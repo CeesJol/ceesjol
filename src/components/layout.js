@@ -4,7 +4,7 @@ import { withTrans } from "../i18n/withTrans";
 import Header from "./index/Header";
 import Footer from "./index/Footer";
 
-const Layout = ({ children, t, i18n }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
