@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import detectLanguage from "../../constants/detectLanguage";
+import detectLanguage, {
+  DEFAULT_LANGUAGE,
+} from "../../constants/detectLanguage";
 import "../../styles/general/language-menu.scss";
 
 const LanguageMenu = () => {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState(detectLanguage());
+  const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
 
   function handleChange(event) {
     i18n.changeLanguage(event.target.value);
     setLanguage(event.target.value);
   }
+
+  useEffect(() => {
+    setLanguage(detectLanguage());
+  }, []);
 
   return (
     // Disable eslint here for onBlur/onChange
