@@ -1,5 +1,5 @@
 import i18next from "i18next";
-import detectLanguage from "../constants/language";
+import detectLanguage from "../constants/detectLanguage";
 
 i18next.init({
   fallbackLng: detectLanguage(),

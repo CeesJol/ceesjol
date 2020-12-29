@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import detectLanguage from "../../constants/language";
+import detectLanguage from "../../constants/detectLanguage";
 import "../../styles/general/language-menu.scss";
 
 const LanguageMenu = () => {
@@ -10,7 +10,6 @@ const LanguageMenu = () => {
   function handleChange(event) {
     i18n.changeLanguage(event.target.value);
     setLanguage(event.target.value);
-    console.log("event.target.value:", event.target.value);
   }
 
   return (
