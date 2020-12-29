@@ -1,13 +1,15 @@
 import React from "react";
 import Button from "../general/Button";
 import "../../styles/components/project.scss";
+import { useTranslation } from "react-i18next";
 
 const Project = ({ project }) => {
+  const { t } = useTranslation();
   const drawDesc = (desc) => {
     return (
       <div key={`desc-${project.name}-${desc.title}`}>
-        <h2>{desc.title}</h2>
-        <p>{desc.description}</p>
+        <h2>{t(desc.title)}</h2>
+        <p>{t(desc.description)}</p>
       </div>
     );
   };
@@ -15,8 +17,8 @@ const Project = ({ project }) => {
     if (!project.features) return;
     return (
       <>
-        <h2>Notable Features</h2>
-        <ul>{project.features.map((feature) => drawFeature(feature))}</ul>
+        <h2>{t("project.features")}</h2>
+        <ul>{t(project.features).map((feature) => drawFeature(feature))}</ul>
       </>
     );
   };
@@ -27,8 +29,8 @@ const Project = ({ project }) => {
     if (!project.technologies) return;
     return (
       <>
-        <h2>Technologies Used</h2>
-        <ul>{project.technologies.map((tech) => drawTech(tech))}</ul>
+        <h2>{t("project.technologies")}</h2>
+        <ul>{t(project.technologies).map((tech) => drawTech(tech))}</ul>
       </>
     );
   };
@@ -39,7 +41,7 @@ const Project = ({ project }) => {
     <div className="project">
       <div className="content-container">
         <div className="project__header">
-          <h1>{project.name}</h1>
+          <h1>{t(project.name)}</h1>
           <div className="buttons-container">
             <Button
               href={project.link}

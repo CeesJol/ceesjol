@@ -1,11 +1,10 @@
 const SKILL_SECTIONS = [
   {
-    title: "Web Development",
-    description:
-      "I've learned these skills through personal projects and online courses/tutorials",
+    title: "skills.skills.0.title",
+    description: "skills.skills.0.description",
     sections: [
       {
-        title: "Agile with",
+        title: "skills.agileWith",
         content: [
           "HTML5",
           "CSS3, SCSS",
@@ -16,15 +15,14 @@ const SKILL_SECTIONS = [
         ],
       },
       {
-        title: "Familiar with",
+        title: "skills.familiarWith",
         content: ["Python, Django", "508 Accessibility", "API Routes"],
       },
     ],
   },
   {
-    title: "Other",
-    description:
-      "These are skills I've learned through my study or personal projects.",
+    title: "skills.skills.1.title",
+    description: "skills.skills.1.description",
     sections: [
       {
         title: "Agile with",

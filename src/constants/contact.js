@@ -44,7 +44,7 @@ const CONTACT_INFO = [
     ),
   },
   {
-    name: "Resume",
+    name: "contact.resume",
     link: "cees_jol_cv.pdf",
     download: true,
     icon: () => (
