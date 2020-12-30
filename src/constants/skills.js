@@ -16,7 +16,7 @@ const SKILL_SECTIONS = [
       },
       {
         title: "skills.familiarWith",
-        content: ["Python, Django", "508 Accessibility", "API Routes"],
+        content: ["Django", "508 Accessibility", "API Routes"],
       },
     ],
   },
@@ -25,12 +25,13 @@ const SKILL_SECTIONS = [
     description: "skills.skills.1.description",
     sections: [
       {
-        title: "Agile with",
+        title: "skills.agileWith",
         content: ["CI/CD", "Git, Scrum, Agile, Kanban"],
       },
       {
-        title: "Familiar with",
+        title: "skills.familiarWith",
         content: [
+          "Python",
           "Java, Maven",
           "Docker",
           "SQL, MySQL, PostgreSQL",

@@ -5,15 +5,11 @@
 	},
 	"intro": {
 		"title": "Hallo, ik ben Cees",
-		"subtitle": "Ik ben een student Technische Informatica aan de TU Delft met passie voor leren en lesgeven. Ik ben Ervaren in Webdevelopment en UI/UX."
+		"subtitle": "Ik ben een student Technische Informatica aan de TU Delft met passie voor leren en lesgeven. Ik ben ervaren in Webdevelopment en UI/UX."
 	},
 	"portfolio": {
 		"title": "Mijn recente projecten",
-		"subtitle": "Hier is een overview van mijn meeste recente projecten in web development."
-	},
-	"project": {
-		"features": "Belangrijke Kenmerken",
-		"technologies": "Technologieën Gebruikt"
+		"subtitle": "Hier is een overzicht van mijn meeste recente projecten in Webdevelopment."
 	},
 	"cta": {
 		"title": "Contact opnemen",
@@ -21,15 +17,16 @@
 		"email": "Stuur een e-mail"
 	},
 	"contact": {
-		"resume": "CV"
+		"email": "E-mail",
+		"resume": "cv"
 	},
 	"skills": {
 		"agileWith": "Behendig met",
 		"familiarWith": "Bekend met",
 		"skills": [
 			{
-				"title": "Web Development",
-				"description": "Ik heb deze vaardigheden opgedaan door mijn eigen projecten en online courses/tutorials."
+				"title": "Webdevelopment",
+				"description": "Ik heb deze vaardigheden opgedaan door middel van mijn eigen projecten en online courses/tutorials."
 			},
 			{
 				"title": "Overige",
@@ -38,6 +35,8 @@
 		]
 	},
 	"projects": {
+		"features": "Belangrijke kenmerken",
+		"technologies": "Technologieën gebruikt",
 		"buttons": {
 			"visitSite": "Bekijk site",
 			"viewCode": "Bekijk code"
@@ -48,11 +47,11 @@
 			{
 				"name": "Resume Builder",
 				"description": [
-					"Een CV maken is een lastig proces. Het maken van een geschikt sjabloon en het geven van relevante details is vaak lastig.",
-					"Een online cv-bouwer zou mensen kunnen helpen met een kant-en-klaar sjabloon en tips op basis van hun huidige cv."
+					"Een cv schrijven is een lastig proces. Het opmaken van het cv en het schrijven van relevante details blijkt vaak moeilijk te zijn.",
+					"Een online cv-bouwer kan mensen helpen door kant-en-klare sjablonen aan te bieden en tips te geven om hun cv te verbeteren terwijl ze het schrijven."
 				],
 				"features": [
-					"Account aanmaken, authentication, e-mailbevestiging",
+					"Account registratie, authenticatie, e-mailbevestiging",
 					"Gebruiksvriendelijke interface voor het maken van een cv",
 					"Kant-en-klare sjabloons",
 					"Tips op basis van de huidige cv (in ontwikkeling)",
@@ -63,14 +62,14 @@
 					"Front-end: React, Next.js, Sass",
 					"Back-end: serverless API routes",
 					"Database: FaunaDB, GraphQL",
-					"Authentication: JWT access tokens opgeslagen in cookies"
+					"Authenticatie: JWT access tokens opgeslagen in cookies"
 				]
 			},
 			{
 				"name": "Proteus Introductie Site",
 				"description": [
-					"Mijn roeivereniging, Proteus-Eretes, heeft een introductiesite voor potentiële nieuwe leden. Deze moest worden bijgewerkt om informatiever te zijn.",
-					"In een commissie met andere programmeurs en ontwerpers een responsive website met veel inhoud gemaakt."
+					"Mijn roeivereniging, Proteus, heeft een introductiesite voor potentiële nieuwe leden. Deze moest worden bijgewerkt om informatiever te zijn.",
+					"In een commissie met andere programmeurs en ontwerpers een responsive website met veel inhoud zoals videos gemaakt."
 				],
 				"technologies": ["Vue", "Nuxt.js", "Vuetify"]
 			}

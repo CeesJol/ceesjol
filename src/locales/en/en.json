@@ -5,15 +5,11 @@
 	},
 	"intro": {
 		"title": "Hi, I'm Cees",
-		"subtitle": "I am a student Computer Science and Engineering at Delft UT with a passion for learning and teaching. I am experienced in Webdevelopment and UI/UX."
+		"subtitle": "I am a student Computer Science and Engineering at Delft UT with a passion for learning and teaching. I am experienced in Web Development and UI/UX."
 	},
 	"portfolio": {
-		"title": "My recent work",
-		"subtitle": "Here is an overview of my most recent work in web development."
-	},
-	"project": {
-		"features": "Notable Features",
-		"technologies": "Technologies Used"
+		"title": "My Recent Work",
+		"subtitle": "Here is an overview of my most recent work in Web Development."
 	},
 	"cta": {
 		"title": "Contact me",
@@ -21,6 +17,7 @@
 		"email": "Email me"
 	},
 	"contact": {
+		"email": "Email",
 		"resume": "Resume (Dutch)"
 	},
 	"skills": {
@@ -29,7 +26,7 @@
 		"skills": [
 			{
 				"title": "Web Development",
-				"description": "I've learned these skills through personal projects and online courses/tutorials"
+				"description": "I've learned these skills through personal projects and online courses/tutorials."
 			},
 			{
 				"title": "Other",
@@ -38,6 +35,8 @@
 		]
 	},
 	"projects": {
+		"features": "Notable Features",
+		"technologies": "Technologies Used",
 		"buttons": {
 			"visitSite": "Visit site",
 			"viewCode": "View code"
@@ -48,11 +47,11 @@
 			{
 				"name": "Resume Builder",
 				"description": [
-					"Creating a resume is a process people struggle with. Creating a suitable template and giving relevant details is often found to be hard.",
-					"An online resume builder could help people with a premade template and tips based on their current resume."
+					"Creating a resume is a process people struggle with. Formatting and writing relevant details properly is often found to be hard.",
+					"An online resume builder could help people by providing premade templates and giving tips on how to improve their resume as they write it."
 				],
 				"features": [
-					"Account creation, authentication, confirmation",
+					"Account registration, authentication, confirmation",
 					"User-friendly interface to create a resume",
 					"Premade templates",
 					"Resume tips based on current resume (in development)",
@@ -61,7 +60,7 @@
 				],
 				"technologies": [
 					"Front-end: React, Next.js, Sass",
-					"Back-end: serverless API routes",
+					"Back-end: Serverless API routes",
 					"Database: FaunaDB, GraphQL",
 					"Authentication: JWT access tokens stored in cookies"
 				]
@@ -69,8 +68,8 @@
 			{
 				"name": "Proteus Introduction Site",
 				"description": [
-					"My rowing association, Proteus-Eretes, has an introduction site for potential new members. It had to be updated to be more informative.",
-					"Created a responsive website with much content in a committee with other programmers and designers."
+					"My rowing association, Proteus, has an introduction site for potential new members. It had to be updated to be more informative.",
+					"Created a responsive website with much content such as videos in a committee with other programmers and designers."
 				],
 				"technologies": ["Vue", "Nuxt.js", "Vuetify"]
 			}

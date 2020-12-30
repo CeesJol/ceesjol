@@ -17,7 +17,7 @@ const Project = ({ project }) => {
     if (!project.features) return;
     return (
       <>
-        <h2>{t("project.features")}</h2>
+        <h2>{t("projects.features")}</h2>
         <ul>{t(project.features).map((feature) => drawFeature(feature))}</ul>
       </>
     );
@@ -29,7 +29,7 @@ const Project = ({ project }) => {
     if (!project.technologies) return;
     return (
       <>
-        <h2>{t("project.technologies")}</h2>
+        <h2>{t("projects.technologies")}</h2>
         <ul>{t(project.technologies).map((tech) => drawTech(tech))}</ul>
       </>
     );
@@ -45,11 +45,14 @@ const Project = ({ project }) => {
           <div className="buttons-container">
             <Button
               href={project.link}
-              text="Visit site"
+              text={t("projects.buttons.visitSite")}
               color="primary-color"
             />
             {project.sourceLink && (
-              <Button href={project.sourceLink} text="View code" />
+              <Button
+                href={project.sourceLink}
+                text={t("projects.buttons.viewCode")}
+              />
             )}
           </div>
         </div>

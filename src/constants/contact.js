@@ -30,7 +30,7 @@ const CONTACT_INFO = [
     ),
   },
   {
-    name: "Email",
+    name: "contact.email",
     link: "mailto:info@ceesjol.nl",
     icon: () => (
       <svg
