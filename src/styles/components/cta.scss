@@ -6,7 +6,7 @@
   justify-content: space-between;
 
   &--title {
-    @media (min-width: $tablet-breakpoint) {
+    @media (min-width: calc(#{$tablet-breakpoint} + 0.1rem)) {
       margin-bottom: 0;
     }
   }

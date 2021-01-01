@@ -1,0 +1,26 @@
+.squares {
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    display: inline-block;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__square {
+    display: flex;
+    // background-color: blue;
+    border: 1px solid grey;
+    width: 1rem;
+    height: 1rem;
+    margin: 1px;
+
+    &--colored {
+      background-color: red;
+      border: 1px solid red;
+    }
+  }
+}
