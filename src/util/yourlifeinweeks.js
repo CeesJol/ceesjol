@@ -49,3 +49,11 @@ export const generateNumbersArray = (n) => {
   }
   return result;
 };
+
+/**
+ * Reset birthday localStorage
+ * Used in case birthday is of invalid type (eg. "null")
+ */
+export const resetLocalStorage = () => {
+  localStorage.removeItem("birthday");
+};

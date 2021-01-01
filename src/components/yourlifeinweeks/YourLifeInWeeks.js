@@ -5,6 +5,7 @@ import {
   generateNumbersArray,
   getWeeksPassed,
   getYearsPassed,
+  resetLocalStorage,
 } from "../../util/yourlifeinweeks";
 
 const YourLifeInWeeks = ({ birthday }) => {
@@ -42,7 +43,9 @@ const YourLifeInWeeks = ({ birthday }) => {
     yearsPassed = getYearsPassed(birthday);
     // How many weeks have passed since most recent birthday
     weeksPassed = getWeeksPassed(birthday);
-  } catch (e) {}
+  } catch (e) {
+    resetLocalStorage();
+  }
   return (
     <div className="squares__container">
       <p className="squares__indication--week-text">Weeks &rarr;</p>

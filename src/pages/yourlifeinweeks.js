@@ -3,15 +3,13 @@ import YourLifeInWeeks from "../components/yourlifeinweeks/YourLifeInWeeks";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "../styles/yourlifeinweeks.scss";
+import { resetLocalStorage } from "../util/yourlifeinweeks";
 
 const YourLifeInWeeksPage = () => {
   const [birthday, setBirthday] = useState(new Date());
   const handleChangeBirthday = (date) => {
     setBirthday(date);
     localStorage.setItem("birthday", date);
-  };
-  const resetLocalStorage = () => {
-    localStorage.removeItem("birthday");
   };
   useEffect(() => {
     if (localStorage.getItem("birthday") === "null") {
