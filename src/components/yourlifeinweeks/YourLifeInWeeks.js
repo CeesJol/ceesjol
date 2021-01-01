@@ -14,6 +14,29 @@ const YourLifeInWeeks = ({ birthday }) => {
   let totalWeeks = generateNumbersArray(WEEKS_PER_YEAR);
   let yearsPassed = 0,
     weeksPassed = 0;
+  const getSquareContent = (year, week) => {
+    if (year > 0 && week > 0) return null;
+    if (year === 0 && week === 0) {
+      return (
+        <>
+          <p className="squares__indication squares__indication--week">0</p>
+          <p className="squares__indication squares__indication--year">0</p>
+        </>
+      );
+    }
+
+    if (year === 0 && week % 5 === 0) {
+      return (
+        <p className="squares__indication squares__indication--week">{week}</p>
+      );
+    }
+    if (week === 0 && year % 5 === 0) {
+      return (
+        <p className="squares__indication squares__indication--year">{year}</p>
+      );
+    }
+    return null;
+  };
   try {
     // How many years have passed since birth
     yearsPassed = getYearsPassed(birthday);
@@ -22,6 +45,8 @@ const YourLifeInWeeks = ({ birthday }) => {
   } catch (e) {}
   return (
     <div className="squares__container">
+      <p className="squares__indication--week-text">Weeks &rarr;</p>
+      <p className="squares__indication--year-text">&larr; Years</p>
       {totalYears.map((year) => (
         <div className="squares__row" key={`row-${year}`}>
           {totalWeeks.map((week) => (
@@ -33,7 +58,9 @@ const YourLifeInWeeks = ({ birthday }) => {
                 weeksPassed
               )}
               key={`square-${year}-${week}`}
-            ></div>
+            >
+              {getSquareContent(year, week)}
+            </div>
           ))}
         </div>
       ))}

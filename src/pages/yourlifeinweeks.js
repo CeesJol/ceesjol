@@ -49,6 +49,7 @@ const YourLifeInWeeksPage = () => {
           back whenever you like to get reminded of how precious yet short life
           is.
         </p>
+        <p>On mobile, please scroll to the right to see all the weeks.</p>
         <form>
           <label>Your birthday (Format: MM-DD-YYYY)</label>
           <br />
