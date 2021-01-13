@@ -45,8 +45,12 @@ const CONTACT_INFO = [
   },
   {
     name: "contact.resume",
-    link: "cees_jol_cv.pdf",
-    download: true,
+    // Link
+    link:
+      "https://docs.google.com/document/d/1IqMpnJz8JXtpYpIyD01M-xferMQQJjBlCfX-SY_Vuqk/export?format=pdf",
+    // File
+    // link: "cees_jol_cv.pdf",
+    // download: true,
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
