@@ -8,7 +8,7 @@ const Splash = ({ data }) => {
   return (
     <section>
       <div className="container splash">
-        <div className="content-container">
+        <div className="content-container content-container--extra-vertical-space">
           <h1>{t("splash.title")}</h1>
           <h2 className="p-large" style={{ marginTop: "2rem" }}>
             {t("splash.subtitle")}

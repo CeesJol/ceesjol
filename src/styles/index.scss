@@ -82,6 +82,11 @@ body {
     padding: 5rem $margin-side-small;
   }
 
+  &--extra-vertical-space {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   &--small {
     width: 60%;
     @media (max-width: $tablet-breakpoint) {
