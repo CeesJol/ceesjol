@@ -8,6 +8,15 @@
   padding-top: 2.5rem !important;
   padding-bottom: 0 !important;
 
+  a {
+    color: inherit;
+    transition: 0.3s;
+
+    &:hover {
+      color: darken($primary-color, 5%);
+    }
+  }
+
   &__left {
     color: $primary-color;
     font-weight: 600;
