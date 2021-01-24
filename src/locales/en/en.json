@@ -80,5 +80,10 @@
 			"Made with ❤️ using ",
 			"View on "
 		]
+	},
+	"404": {
+		"title": "Page not found",
+		"subtitle": "Sorry 😔 we couldn’t find what you were looking for.",
+		"link": "Go home"
 	}
 }

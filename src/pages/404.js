@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { useTranslation } from "react-i18next";
 
 // styles
 const pageStyles = {
@@ -19,19 +20,16 @@ const paragraphStyles = {
 
 // markup
 const NotFoundPage = () => {
+  const { t } = useTranslation();
   return (
     <main style={pageStyles}>
       <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
+      <h1 style={headingStyles}>{t("404.title")}</h1>
       <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
+        {t("404.subtitle")}
         <br />
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">{t("404.link")}</Link>.
       </p>
     </main>
   );

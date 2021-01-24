@@ -80,5 +80,10 @@
 			"Gemaakt met ❤️ met ",
 			"Bekijk op "
 		]
+	},
+	"404": {
+		"title": "Pagina niet gevonden",
+		"subtitle": "Sorry 😔 we kunnen die pagina niet vinden.",
+		"link": "Terug naar de homepagina"
 	}
 }
