@@ -28,6 +28,7 @@
 
   &:hover {
     background-color: white;
+    border: 1px solid white;
 
     & > * {
       fill: $primary-color;
