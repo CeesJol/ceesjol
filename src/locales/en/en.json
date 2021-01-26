@@ -18,7 +18,10 @@
 	},
 	"contact": {
 		"email": "Email",
-		"resume": "Resume (Dutch)"
+		"resume": {
+			"name": "Resume",
+			"link": "https://docs.google.com/document/d/1ejq0L8lExYWi2_YhpNJhekIOJI1AiTK-8FUkYLNc0FU/export?format=pdf"
+		}
 	},
 	"skills": {
 		"agileWith": "Agile with",

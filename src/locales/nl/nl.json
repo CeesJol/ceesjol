@@ -18,7 +18,10 @@
 	},
 	"contact": {
 		"email": "E-mail",
-		"resume": "cv"
+		"resume": {
+			"name": "cv",
+			"link": "https://docs.google.com/document/d/1IqMpnJz8JXtpYpIyD01M-xferMQQJjBlCfX-SY_Vuqk/export?format=pdf"
+		}
 	},
 	"skills": {
 		"agileWith": "Behendig met",

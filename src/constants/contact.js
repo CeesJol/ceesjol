@@ -44,10 +44,10 @@ const CONTACT_INFO = [
     ),
   },
   {
-    name: "contact.resume",
+    name: "contact.resume.name",
     // Link
-    link:
-      "https://docs.google.com/document/d/1IqMpnJz8JXtpYpIyD01M-xferMQQJjBlCfX-SY_Vuqk/export?format=pdf",
+    link: "contact.resume.link",
+    translateLink: true,
     // File
     // link: "cees_jol_cv.pdf",
     // download: true,
