@@ -1,5 +1,5 @@
-export const DEFAULT_LANGUAGE = "nl";
-export const SECOND_LANGAUGE = "en";
+export const DEFAULT_LANGUAGE = "en";
+export const SECOND_LANGAUGE = "nl";
 
 const detectLanguage = () => {
   // Find user language

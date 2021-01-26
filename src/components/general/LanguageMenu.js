@@ -24,7 +24,7 @@ const LanguageMenu = () => {
     <select
       value={language}
       onChange={(e) => handleChange(e)}
-      class="language-menu"
+      className="language-menu"
     >
       {/* Disable eslint as option tags do not allow tags */}
       {/* eslint-disable jsx-a11y/accessible-emoji */}
