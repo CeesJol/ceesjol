@@ -17,6 +17,7 @@ const Splash = ({ data }) => {
             className="splash--image"
             fixed={data.file.childImageSharp.fixed}
             alt="Cees Jol"
+            title="Cees Jol"
           />
         </div>
       </div>

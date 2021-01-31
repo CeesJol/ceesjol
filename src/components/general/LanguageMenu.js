@@ -6,7 +6,7 @@ import detectLanguage, {
 import "../../styles/general/language-menu.scss";
 
 const LanguageMenu = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
 
   function handleChange(event) {
@@ -25,6 +25,7 @@ const LanguageMenu = () => {
       value={language}
       onChange={(e) => handleChange(e)}
       className="language-menu"
+      title={t("language-menu.title")}
     >
       {/* Disable eslint as option tags do not allow tags */}
       {/* eslint-disable jsx-a11y/accessible-emoji */}

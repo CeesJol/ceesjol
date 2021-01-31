@@ -62,7 +62,8 @@ const Project = ({ project }) => {
               <img
                 className="project--image"
                 src={`projects/${project.img}`}
-                alt={project.name}
+                alt={t(project.name)}
+                title={t(project.name)}
               />
             </a>
           </div>

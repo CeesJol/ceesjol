@@ -31,6 +31,7 @@ const CONTACT_INFO = [
   },
   {
     name: "contact.email",
+    translateName: true,
     link: "mailto:info@ceesjol.nl",
     icon: () => (
       <svg
@@ -45,6 +46,7 @@ const CONTACT_INFO = [
   },
   {
     name: "contact.resume.name",
+    translateName: true,
     // Link
     link: "contact.resume.link",
     translateLink: true,
