@@ -2,8 +2,20 @@ import React from "react";
 import "../../styles/components/splash.scss";
 import Img from "gatsby-image";
 import { useTranslation } from "react-i18next";
+import { useStaticQuery, graphql } from "gatsby";
 
-const Splash = ({ data }) => {
+const Splash = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "cees_circular.png" }) {
+        childImageSharp {
+          fixed(width: 225, height: 225) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
   const { t } = useTranslation();
   return (
     <section>
@@ -26,45 +38,3 @@ const Splash = ({ data }) => {
 };
 
 export default Splash;
-
-// export const query = graphql`
-//   query {
-//     file(relativePath: { eq: "cees.png" }) {
-//       childImageSharp {
-//         # Specify the image processing specifications right in the query.
-//         # Makes it trivial to update as your page's design changes.
-//         fixed(width: 125, height: 125) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `;
-
-// import React from "react";
-// import { graphql } from "gatsby";
-// import Img from "gatsby-image";
-// // import Layout from "../components/layout"
-// const HomePage = ({ data }) => {
-//   return (
-//     <div>
-//       <Img
-//         className="headshot"
-//         fixed={data.file.childImageSharp.fixed}
-//         alt=""
-//       />
-//     </div>
-//   );
-// };
-// export const query = graphql`
-//   query {
-//     file(relativePath: { eq: "cees.png" }) {
-//       childImageSharp {
-//         fixed(width: 125, height: 125) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `;
-// export default HomePage;

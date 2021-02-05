@@ -8,11 +8,11 @@ import CTA from "../components/index/CTA";
 
 import "../styles/index.scss";
 
-const index = ({ data }) => {
+const index = () => {
   return (
     <div>
       <main>
-        <Splash data={data} />
+        <Splash />
         <Intro />
         {/* <Skills /> */}
         <Portfolio />
@@ -22,17 +22,5 @@ const index = ({ data }) => {
     </div>
   );
 };
-
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "cees_circular.png" }) {
-      childImageSharp {
-        fixed(width: 225, height: 225) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`;
 
 export default index;
