@@ -1,9 +1,10 @@
 import React from "react";
+import Img from "gatsby-image";
 import Button from "../general/Button";
 import "../../styles/components/project.scss";
 import { useTranslation } from "react-i18next";
 
-const Project = ({ project }) => {
+const Project = ({ project, img }) => {
   const { t } = useTranslation();
   const drawDesc = (desc) => {
     return (
@@ -59,11 +60,11 @@ const Project = ({ project }) => {
         <div className="project__body">
           <div className="project__left">
             <a href={project.link} target="_blank" rel="noreferrer">
-              <img
+              <Img
                 className="project--image"
-                src={`projects/${project.img}`}
                 alt={t(project.name)}
                 title={t(project.name)}
+                fluid={img.childImageSharp.fluid}
               />
             </a>
           </div>

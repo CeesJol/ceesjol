@@ -10,6 +10,13 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-transformer-json`,
+      // Leave this commented out in recent versions of this plugin
+      // options: {
+      //   typeName: `Json`, // a fixed string
+      // },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
