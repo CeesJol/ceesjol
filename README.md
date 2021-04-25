@@ -1,6 +1,6 @@
 # Hi there! <img src="https://raw.githubusercontent.com/CeesJol/CeesJol/master/static/wave.gif" width="30px">
 
-My name is Cees Jol and I am a Computer Science and Engineering master student at Delft UT. I am experienced in web development and UI/UX. You can find me on [![LinkedIn][3.2]][3].
+My name is Cees Jol and I am a Computer Science master student at Delft UT. I am experienced in web development and UI/UX. You can find me on [LinkedIn][3].
 
 ## 👨‍💻 Portfolio
 
