@@ -1,27 +1,18 @@
-/**
- * Calculate number of weeks passed
- * Source: https://www.javatpoint.com/calculate-current-week-number-in-javascript#:~:text=Approach%202%3A%20Calculate%20the%20week%20number%20for%20a%20predefined%20date&text=Initialize%20it%20by%20creating%20the,getTime()%3B
- */
-export const getWeeksPassed = (date) => {
-  date = new Date(date);
+export const getYearsAndWeeksPassed = (date) => {
+  var birthday = new Date(date);
+  var currentDate = new Date();
 
-  //find the year of the entered date
-  var oneJan = new Date(date.getFullYear(), 0, 1);
+  var res = currentDate - birthday; // Subtract birthday from current date
+  var weeks = res / 3600 / 24 / 1000 / 7; // Convert to weeks
+  var years = res / 3600 / 24 / 1000 / 365; // Convert to years
 
-  // calculating number of days in given year before the given date
-  var numberOfDays = Math.floor((date - oneJan) / (24 * 60 * 60 * 1000));
+  // Weeks
+  weeks = weeks % 52; // Ignore years
 
-  // adding 1 since to current date and returns value starting from 0
-  var result = Math.ceil((date.getDay() + 1 + numberOfDays) / 7);
+  // Years
+  years = years + 1;
 
-  return 52 - result;
-};
-
-/**
- * Calculate number of years passed
- */
-export const getYearsPassed = (date) => {
-  return new Date().getFullYear() - date.getFullYear();
+  return [Math.floor(weeks), Math.floor(years)];
 };
 
 /**

@@ -3,8 +3,7 @@ import "../../styles/components/yourlifeinweeks/square.scss";
 import {
   getSquareClassName,
   generateNumbersArray,
-  getWeeksPassed,
-  getYearsPassed,
+  getYearsAndWeeksPassed,
   resetLocalStorage,
 } from "../../util/yourlifeinweeks";
 
@@ -16,22 +15,24 @@ const YourLifeInWeeks = ({ birthday }) => {
   let yearsPassed = 0,
     weeksPassed = 0;
   const getSquareContent = (year, week) => {
-    if (year > 0 && week > 0) return null;
-    if (year === 0 && week === 0) {
+    year = year + 1;
+    week = week + 1;
+    if (year > 1 && week > 1) return null;
+    if (year === 1 && week === 1) {
       return (
         <>
-          <p className="squares__indication squares__indication--week">0</p>
-          <p className="squares__indication squares__indication--year">0</p>
+          <p className="squares__indication squares__indication--week">1</p>
+          <p className="squares__indication squares__indication--year">1</p>
         </>
       );
     }
 
-    if (year === 0 && week % 5 === 0) {
+    if (year === 1 && week % 5 === 0) {
       return (
         <p className="squares__indication squares__indication--week">{week}</p>
       );
     }
-    if (week === 0 && year % 5 === 0) {
+    if (week === 1 && year % 5 === 0) {
       return (
         <p className="squares__indication squares__indication--year">{year}</p>
       );
@@ -39,10 +40,11 @@ const YourLifeInWeeks = ({ birthday }) => {
     return null;
   };
   try {
-    // How many years have passed since birth
-    yearsPassed = getYearsPassed(birthday);
-    // How many weeks have passed since most recent birthday
-    weeksPassed = getWeeksPassed(birthday);
+    // How many weeks and years have passed since most recent birth
+    const passed = getYearsAndWeeksPassed(birthday);
+    weeksPassed = passed[0];
+    yearsPassed = passed[1];
+    console.log(new Date(birthday));
   } catch (e) {
     resetLocalStorage();
   }
