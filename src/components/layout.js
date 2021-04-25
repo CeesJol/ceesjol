@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Computer Science Student and Web Developer, based in Delft, the Netherlands"
+          content="Master Student Computer Science and Web Developer, based in Delft, the Netherlands"
         />
         <meta
           name="keywords"
