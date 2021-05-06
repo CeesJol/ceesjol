@@ -31,11 +31,11 @@
 		"familiarWith": "Familiar with",
 		"skills": [
 			{
-				"title": "Web Development",
+				"title": "Web Development skills",
 				"description": "I've learned these skills through personal projects and online courses/tutorials."
 			},
 			{
-				"title": "Other",
+				"title": "Other skills",
 				"description": "These are skills I've learned through my study or personal projects."
 			}
 		]
