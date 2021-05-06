@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         />
         <meta
           name="keywords"
-          content="Cees Jol, Computer Science, Delft, developer, web developer, React, Vue, HTML, JavaScript"
+          content="Cees Jol, Computer Science, student, Delft, The Netherlands, Nederland, developer, web developer, React, Vue, HTML, JavaScript, LinkedIn, GitHub, Resume, CV"
         />
         <meta name="author" content="Cees Jol"></meta>
       </Helmet>
