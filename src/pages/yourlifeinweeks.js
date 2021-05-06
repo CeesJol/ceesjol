@@ -49,9 +49,10 @@ const YourLifeInWeeksPage = () => {
         </p>
         <p>On mobile, please scroll to the right to see all the weeks.</p>
         <form>
-          <label>Your birthday (Format: MM-DD-YYYY)</label>
+          <label htmlFor="datepicker">Your birthday (Format: MM-DD-YYYY)</label>
           <br />
           <DatePicker
+            id="datepicker"
             selected={birthday}
             onChange={(date) => handleChangeBirthday(date)}
           />

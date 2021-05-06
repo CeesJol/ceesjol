@@ -44,7 +44,6 @@ const YourLifeInWeeks = ({ birthday }) => {
     const passed = getYearsAndWeeksPassed(birthday);
     weeksPassed = passed[0];
     yearsPassed = passed[1];
-    console.log(new Date(birthday));
   } catch (e) {
     resetLocalStorage();
   }
