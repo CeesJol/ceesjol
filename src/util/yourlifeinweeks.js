@@ -3,13 +3,10 @@ export const getYearsAndWeeksPassed = (date) => {
   var currentDate = new Date();
 
   var res = currentDate - birthday; // Subtract birthday from current date
-  var weeks = res / 3600 / 24 / 1000 / 7; // Convert to weeks
+  var weeks = ((res / 3600 / 24 / 1000) % 365) / 7; // Convert to weeks (ignore years)
   var years = res / 3600 / 24 / 1000 / 365; // Convert to years
 
-  // Weeks
-  weeks = weeks % 52; // Ignore years
-
-  // Years
+  // Add one year, this will be (partially) filled with weeks
   years = years + 1;
 
   return [Math.floor(weeks), Math.floor(years)];
